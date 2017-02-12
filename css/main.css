@@ -1,8 +1,17 @@
 .item {
     text-align: center;
     display: inline-block;
-    width: 600px;
-    height: 300px;
+    width: 350px;
     margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.item > .item-image {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.item > .item-text {
+    text-align:left;
+    white-space: pre-line;
 }
