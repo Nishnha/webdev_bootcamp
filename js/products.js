@@ -2,13 +2,15 @@ var items = []
 var container = document.getElementById("item-container");
 
 function template(item) {
-    return `
+    let description = "<li>" + item.description.replace(/\n/g, "<li>");
+    let template = `
         <div class="item" id=${item.name}>
             <img src="http://s3.amazonaws.com/com.nishnha.webdev/${item.image}" class="item-image">
             <h3>${item.name}</h3>
-            <ul class="item-text">${item.description}</ul>
+            <ul class="item-text">` + description + `</ul>
         </div>
     `
+    return template;
 };
 
 function createItems(responseText) {
