@@ -3,14 +3,15 @@ var container = document.getElementById("item-container");
 
 function template(item) {
     let description = "<li>" + item.description.replace(/\n/g, "<li>");
-    let template = `
-        <div class="item" id=${item.name}>
+
+    return `
+        <div class="item" id=${item.ID}>
             <img src="http://s3.amazonaws.com/com.nishnha.webdev/${item.image}" class="item-image">
             <h3>${item.name}</h3>
             <ul class="item-text">` + description + `</ul>
+            <button onClick="addToCart(this.parentNode.id)">Add to cart</button>
         </div>
     `
-    return template;
 };
 
 function createItems(responseText) {

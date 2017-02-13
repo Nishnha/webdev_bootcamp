@@ -8,16 +8,23 @@
 </head>
 <body>
     <navbar>
-        <div id="logo"></div>
+        <div id="logo">
+        </div>
         <div id="searchbar">
             <search></search>
         </div>
+        <button onClick="toggleCartView()">
+            <i class="fa fa-2x fa-shopping-cart"></i>
+        </button>
     </navbar>
 
-    <div id="item-container">
-    </div>
+    <div id="item-container"></div>
+
+    <div id="cart" class="hide"></div>
 </body>
 
 <script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/search.js"></script>
 
 </html>
