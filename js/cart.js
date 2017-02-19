@@ -47,7 +47,7 @@ function cartItem(item) {
     let image = item.getElementsByTagName("img").item(0).src;
 
     return `
-        <div id="${item.id}">
+        <div id="${item.id}" class="cart-item">
             <h4>${name}</h4 class="cart-name">
             <img src=${image} class="cart-image">
             <button onClick="removeFromCart(this.parentNode.id)">x</button>
