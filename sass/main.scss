@@ -49,19 +49,23 @@ navbar {
 }
 
 #item-container {
+    width: 800px;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
 
     .item {
         background-color: white;
         color: $black;
         text-align: center;
+        vertical-align: top;
+        padding: 10px;
         display: inline-block;
         width: 350px;
         min-height: 330px;
         margin: 0 auto;
         margin-left: 20px;
+        margin-bottom: 40px;
         box-shadow: $box-shadow;
         
         .item-image {
@@ -82,11 +86,12 @@ navbar {
 #cart {
     height: 100%;
     width: $cart-width;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    //padding-top: $navbar-height;
-    
+    padding-top: $navbar-height;
+    box-sizing: border-box;
+
     background-color: $blue;
     box-shadow: $box-shadow;
     
@@ -106,7 +111,11 @@ navbar {
         display: inline-block;
         border-radius: 20px;
         margin: 10px auto;
-        padding: 10px;
+        padding: 5px;
+
+        h4 {
+            margin: 0;
+        }
     }
 }
 

@@ -30,18 +30,22 @@ navbar {
   padding-top: 100px; }
 
 #item-container {
+  width: 800px;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: center; }
   #item-container .item {
     background-color: white;
     color: #2b303a;
     text-align: center;
+    vertical-align: top;
+    padding: 10px;
     display: inline-block;
     width: 350px;
     min-height: 330px;
     margin: 0 auto;
     margin-left: 20px;
+    margin-bottom: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     #item-container .item .item-image {
       max-width: 200px;
@@ -57,9 +61,11 @@ navbar {
 #cart {
   height: 100%;
   width: 300px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  padding-top: 100px;
+  box-sizing: border-box;
   background-color: #7ebdc2;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
@@ -76,7 +82,9 @@ navbar {
     display: inline-block;
     border-radius: 20px;
     margin: 10px auto;
-    padding: 10px; }
+    padding: 5px; }
+    #cart .cart-item h4 {
+      margin: 0; }
 
 #toast {
   border-radius: 10px;
